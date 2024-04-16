@@ -281,4 +281,27 @@
 <script src="{% static 'js/plugin/chart-circle/circles.min.js' %}"></script>
 <script src="{% static 'js/plugin/jquery-scrollbar/jquery.scrollbar.min.js' %}"></script>
 <script src="{% static 'js/ready.min.js' %}"></script>
+
+{% block content %}
+{% endblock %}
 </html>
+
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Home</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header">
+					<div class="card-title">Page Title</div>
+					<div class="card-category">Page Subtitle</div>
+
+				</div>
+				<div class="card-body">Hello, World</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
